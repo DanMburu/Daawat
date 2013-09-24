@@ -4,7 +4,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Daawat - Recipes</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
- <script src="phonegap.js"></script>
+<!-- <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script> -->
+ <script src="phonegap.js" type="text/javascript"></script>
  <script type="text/javascript" charset="utf-8">
 
     // Wait for Cordova to load
@@ -15,13 +16,13 @@
     //
 	//navigator.app.loadUrl("http://www.tcc-africa.org", {openExternal:true});
     function onDeviceReady() {
-		 alert('ready dan');
-		navigator.app.loadUrl("http://cedgeweb.com/daawat", {openExternal:false});
+		//navigator.app.loadUrl("http://cedgeweb.com/daawat", {openExternal:false});
 		//navigator.app.exitApp();
-        /* var ref = window.open('http://apache.org', '_blank', 'location=yes');
-         ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
+        var ref = window.open('http://cedgeweb.com/daawat', '', 'location=no');
+         /* ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
          ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
          ref.addEventListener('exit', function() { alert(event.type); });*/
+		 ref.addEventListener('loadstop', function() { alert('loaded: ' + event.url); });
     } 
 	function go2(){
 		alert('Clicked Go 2');
@@ -36,6 +37,6 @@
 </head>
 
 <body>
-<a href="#" onclick="go2()">Debug</a>
+<img style="position:absolute;top:5px;left:50%;margin-left:-16px;" src="http://cedgeweb.com/daawat/images/ajaxloader.gif" />
 </body>
 </html>
