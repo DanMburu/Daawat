@@ -3,8 +3,39 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Daawat - Recipes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <script src="phonegap.js"></script>
+ <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+ // Cordova is ready
+    //
+	//navigator.app.loadUrl("http://www.tcc-africa.org", {openExternal:true});
+    function onDeviceReady() {
+		 alert('ready dan');
+		navigator.app.loadUrl("http://cedgeweb.com/daawat", {openExternal:false});
+		//navigator.app.exitApp();
+        /* var ref = window.open('http://apache.org', '_blank', 'location=yes');
+         ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
+         ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
+         ref.addEventListener('exit', function() { alert(event.type); });*/
+    } 
+	function go2(){
+		alert('Clicked Go 2');
+		window.location.href = "http://cedgeweb.com/daawat"; 
+		navigator.app.loadUrl("hhttp://cedgeweb.com/daawat", {openExternal:false});
+	}
+	function go(){
+	   window.location.href = "http://www.tcc-africa.org"; 
+		navigator.app.loadUrl("http://www.tcc-africa.org");
+	}
+    </script>
 </head>
 
 <body>
+<a href="#" onclick="go2()">Debug</a>
 </body>
 </html>
