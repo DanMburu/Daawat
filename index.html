@@ -11,14 +11,14 @@
     // Wait for Cordova to load
     //
     document.addEventListener("deviceready", onDeviceReady, false);
- // Cordova is ready
+     // Cordova is ready
     //
-	//navigator.app.loadUrl("http://www.tcc-africa.org", {openExternal:true});
+   //navigator.app.loadUrl("http://www.tcc-africa.org", {openExternal:true});
     function onDeviceReady() {
 		navigator.app.loadUrl("http://cedgeweb.com/daawat", {openExternal:false});
 		//navigator.app.exitApp();
-       /* var ref = window.open('http://cedgeweb.com/daawat', '', 'location=no');
-          ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
+        var ref = window.open('http://cedgeweb.com/daawat', '', 'location=no');
+       /*   ref.addEventListener('loadstart', function() { alert('start: ' + event.url); });
          ref.addEventListener('loadstop', function() { alert('stop: ' + event.url); });
          ref.addEventListener('exit', function() { alert(event.type); });
 		 ref.addEventListener('loadstop', function() { alert('loaded: ' + event.url); });*/
