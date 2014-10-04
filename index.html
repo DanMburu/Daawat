@@ -25,7 +25,7 @@
                 $('.info').hide();
                 $('.loader').show();
                 var networkState = navigator.connection.type;
-                alert('con:'+networkState);
+                
                 if (networkState == Connection.NONE) {
                     $('.loader').fadeOut();
                     $('.info').fadeIn();
