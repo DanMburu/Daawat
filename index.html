@@ -25,17 +25,17 @@
                 $('.info').hide();
                 $('.loader').show();
                 var networkState = navigator.connection.type;
-                
+                alert('con:'+networkState);
                 if (networkState == Connection.NONE) {
                     $('.loader').fadeOut();
                     $('.info').fadeIn();
                 }
                 else {
-                    navigator.app.loadUrl("http://kendevs.com/dev/deliva", {
+                    navigator.app.loadUrl("http://cedgeweb.com/daawat", {
                         openExternal: false
                     });
                     //navigator.app.exitApp();
-                    var ref = window.open('http://kendevs.com/dev/deliva', '', 'location=no');
+                    var ref = window.open('http://cedgeweb.com/daawat', '', 'location=no');
                 }
                 
             }
